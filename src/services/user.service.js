@@ -10,7 +10,7 @@ const API_URL = "http://localhost:8080/api/test/";
 
 // const API_URL = "/api/test/";
 
-const getPublicContent = () => {  
+const getPublicContent = () => {
   return axios.get(API_URL + "all");
 };
 

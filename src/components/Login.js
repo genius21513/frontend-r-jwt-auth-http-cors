@@ -48,6 +48,7 @@ const Login = () => {
     if (checkBtn.current.context._errors.length === 0) {
       AuthService.login(username, password).then(
         () => {
+          // return;
           // document.cookie = "asdfads=-asdfasdfds";
           // console.log('Cookie: ', document.cookie);
           navigate("/profile");

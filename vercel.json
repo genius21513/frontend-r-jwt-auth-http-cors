@@ -1,4 +1,16 @@
 {
+
+    "rewrites": [
+        { 
+            "source": "/api/:path*",
+            "destination": "http://13.53.64.138:8080/api/:path*" 
+        },
+        { 
+            "source": "/*",
+            "destination": "/index.html" 
+        }        
+    ],
+
     "redirects": [
         { 
             "source": "/api/:path*",

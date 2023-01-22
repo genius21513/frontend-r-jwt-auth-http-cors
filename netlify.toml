@@ -18,7 +18,7 @@
   force = true
 #  conditions = {Role = ["admin", "cms"]}
   [redirects.headers]
-    X-From = "Netlify"
+    X-From = "From Netlify"
     X-Api-Key = "This is test api key"
 
 

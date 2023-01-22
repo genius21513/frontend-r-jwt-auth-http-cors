@@ -11,18 +11,19 @@
   # Default build command.
   command = "yarn build"
 
+[[redirects]]
+  from = "/api/*"
+  to = "http://13.53.64.138:8080/api/:splat"
+  status = 200
+  force = true
+#  conditions = {Role = ["admin", "cms"]}
+  [redirects.headers]
+    X-From = "Netlify"
+    X-Api-Key = "This is test api key"
+
+
 # The following redirect is intended for use with most SPAs that handle routing internally.
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
-
-[[redirects]]
-  from = "/api/*"
-  to = "http://13.53.64.138:8080/api/:splat"
-  status = 200
-#  force = true
-#  conditions = {Role = ["admin", "cms"]}
-#  [redirects.headers]
-#    X-From = "Netlify"
-#    X-Api-Key = "some-api-key-string"

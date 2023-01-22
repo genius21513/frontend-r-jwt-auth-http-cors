@@ -1,0 +1,24 @@
+{
+    "redirects": [
+        { 
+            "source": "/api/:path",
+            "destination": "http://13.53.64.138:8080/api/:path" 
+        },
+        { 
+            "source": "/*",
+            "destination": "/" 
+        }        
+    ],
+
+    "build": {
+        "env": {
+          "MY_KEY": "this is the value",
+          "SECRET": "@my-secret-name"
+        }
+    },
+
+    "env": {
+        "MY_KEY": "this is the value",
+        "SECRET": "@my-secret-name"
+    }
+}
